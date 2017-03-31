@@ -1,0 +1,58 @@
+<script type="text/javascript">
+function AC_Generateobj(objAttrs,params,embedAttrs)
+{var str='<object ';for(var i in objAttrs)
+str+=i+'=\''+objAttrs[i]+'\' ';str+='>';for(var i in params)
+str+='<param name=\''+i+'\' value=\''+params[i]+'\' /> ';str+='<embed ';var tmp='';for(var i in embedAttrs)
+tmp+=i+'=\''+embedAttrs[i]+'\' ';tmp=tmp.replace('gameObject','gameEmbed');str+=tmp+' ></embed></object>';document.write(str);}
+function AC_FL_RunContent(){var ret=AC_GetArgs
+(arguments,'.swf','movie','clsid:d27cdb6e-ae6d-11cf-96b8-444553540000','application/x-shockwave-flash');AC_Generateobj(ret.objAttrs,ret.params,ret.embedAttrs);}
+function AC_GetArgs(args,ext,srcParamName,classid,mimeType){var ret=new Object();ret.embedAttrs=new Object();ret.params=new Object();ret.objAttrs=new Object();for(var i=0;i<args.length;i=i+2){var currArg=args[i].toLowerCase();switch(currArg){case'classid':break;case'pluginspage':ret.embedAttrs[args[i]]=args[i+1];break;case'src':case'movie':ret.embedAttrs['src']=args[i+1];ret.params[srcParamName]=args[i+1];break;case'onafterupdate':case'onbeforeupdate':case'onblur':case'oncellchange':case'onclick':case'ondblClick':case'ondrag':case'ondragend':case'ondragenter':case'ondragleave':case'ondragover':case'ondrop':case'onfinish':case'onfocus':case'onhelp':case'onmousedown':case'onmouseup':case'onmouseover':case'onmousemove':case'onmouseout':case'onkeypress':case'onkeydown':case'onkeyup':case'onload':case'onlosecapture':case'onpropertychange':case'onreadystatechange':case'onrowsdelete':case'onrowenter':case'onrowexit':case'onrowsinserted':case'onstart':case'onscroll':case'onbeforeeditfocus':case'onactivate':case'onbeforedeactivate':case'ondeactivate':case'type':case'codebase':ret.objAttrs[args[i]]=args[i+1];break;case'width':case'height':case'align':case'vspace':case'hspace':case'class':case'title':case'accesskey':case'name':case'id':case'tabindex':ret.embedAttrs[args[i]]=ret.objAttrs[args[i]]=args[i+1];break;default:ret.embedAttrs[args[i]]=ret.params[args[i]]=args[i+1];}}
+ret.objAttrs['classid']=classid;if(mimeType)ret.embedAttrs['type']=mimeType;return ret;}
+function hideIntro(gameHtml) {
+var gameContainer = document.getElementById('gameContainer');
+if (!gameContainer) {
+return;
+}
+gameContainer.innerHTML = gameHtml;
+resizeGameByCookieSetting ();
+showZoomTools();
+}
+</script>
+<script type="text/javascript">
+AC_FL_RunContent(
+'width', '800',
+'height', '480',
+'src', 'http://sda.4399.com/4399swf/upload_swf/ftp20/gamehwq/20170106/01/game.swf',
+'movie', 'http://sda.4399.com/4399swf/upload_swf/ftp20/gamehwq/20170106/01/game.swf',
+'menu', 'false',
+'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
+'quality', 'high',
+'allowFullScreen', 'true'
+,'allowScriptAccess', 'always'
+,'base', 'http://sda.4399.com/4399swf/upload_swf/ftp20/gamehwq/20170106/01/'
+,'id','gameObject'
+, 'wmode', 'direct'
+);
+</script><object width="800" height="480" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" id="gameObject" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"><param name="movie" value="http://sda.4399.com/4399swf/upload_swf/ftp20/gamehwq/20170106/01/game.swf"> <param name="menu" value="false"> <param name="quality" value="high"> <param name="allowFullScreen" value="true"> <param name="allowScriptAccess" value="always"> <param name="base" value="http://sda.4399.com/4399swf/upload_swf/ftp20/gamehwq/20170106/01/"> <param name="wmode" value="direct"> <embed width="800" height="480" src="http://sda.4399.com/4399swf/upload_swf/ftp20/gamehwq/20170106/01/game.swf" menu="false" quality="high" allowfullscreen="true" allowscriptaccess="always" base="http://sda.4399.com/4399swf/upload_swf/ftp20/gamehwq/20170106/01/" id="gameEmbed" wmode="direct" type="application/x-shockwave-flash"></object>
+<noscript>
+&lt;object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="//download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width=800 height=480 id=gameObject allowFullScreen=true AllowScriptAccess=always&gt;
+&lt;param name=movie value="//sda.4399.com/4399swf/upload_swf/ftp20/gamehwq/20170106/01/game.swf"&gt;
+&lt;param name=menu value=false&gt;
+&lt;param name=quality value=high&gt;
+&lt;param name=bgcolor value="#000000"&gt;
+&lt;param name=allowfullscreen value=true&gt;
+&lt;param name=AllowScriptAccess value=always&gt;
+&lt;param name=wmode value=direct&gt;
+&lt;param name=base value="//sda.4399.com/4399swf/upload_swf/ftp20/gamehwq/20170106/01/"&gt;
+&lt;embed src="//sda.4399.com/4399swf/upload_swf/ftp20/gamehwq/20170106/01/game.swf"
+quality=high
+bgcolor=#000000
+width=800
+height=480
+type="application/x-shockwave-flash"
+pluginspage="//www.macromedia.com/go/getflashplayer"
+id=gameEmbed
+wmode=direct
+base="//sda.4399.com/4399swf/upload_swf/ftp20/gamehwq/20170106/01/"&gt;&lt;/embed&gt;
+&lt;/object&gt;
+</noscript>

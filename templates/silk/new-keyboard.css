@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+body { margin:0; padding:0; }
+.gameboard { width:113px; height:370px; float:left; overflow:hidden; background:#000; cursor:pointer; }
+.keyboardn { width:533px; height:174px; background:url(../images/keyboard.html) no-repeat left top; float:left; margin-top:24px; margin-bottom:16px; margin-left:-428px; position:relative; }
+#keyboardn { width:533px; height:174px; background:url(../images/keyboard.html) no-repeat left top; float:left;  position:relative; }
+.blockdiv { position: absolute; width:533px; height:174px; top: 0px; left: 0px; z-index:2; }
+.blockdiv1 { position: absolute; width:533px; height:174px; top: 0px; left: 0px; z-index:25; }
+.left-keysn { float: left; height: 111px; margin-left: 16px; margin-top: 0px; width: 413px; }
+.numbers { height:28px; margin-top:26px; width:413px; float:left; }
+.right-keysn { float: left; height: 56px; margin-left: 6px; margin-top: 110px; width: 83px; }
+.keyn { width:22px; height:22px; margin-top:3px; float:left; margin-left:1px; border-radius:2px; -moz-border-radius:2px; -ms-border-radius:2px; -o-border-radius:2px; -webkit-border-radius:2px; }
+.key-active{ background:#b40909; }
+#nego { margin-left:3px; }
+#one { margin-left:6px; }
+#two { margin-left:5px; }
+#three { margin-left:6px; }
+#four { margin-left:5px; }
+#five { margin-left:6px; }
+#six { margin-left:6px; }
+#seven { margin-left:6px; }
+#eight { margin-left:6px; width: 23px; }
+#nine { margin-left:6px; }
+#zero { margin-left:6px; }
+#tabn { width:35px; margin-left:3px; margin-top:3px; }
+#qn { margin-left:7px; }
+#wn { margin-left:5px; }
+#en { margin-left:6px; }
+#rn { margin-left:5px; }
+#tn { margin-left:6px; }
+#yn { margin-left:6px; }
+#un { margin-left:6px; }
+#in { margin-left:6px; width:23px; }
+#on { margin-left:6px; }
+#pn { margin-left:6px; }
+#afterpn { margin-left:6px; width:88px; }
+.dividern { width:100%; height:3px; float:left; }
+#capsn { width:41px; margin-left:3px; margin-top:3px; }
+#an { margin-left:7px; }
+#sn { margin-left:6px; }
+#dn { margin-left:5px; }
+#fn { margin-left:6px; }
+#gn { margin-left:5px; }
+#hn { margin-left:6px; }
+#jn { margin-left:6px; }
+#kn { margin-left:6px; width:23px; }
+#ln { margin-left:6px; }
+#afterln { margin-left:6px; width:110px; }
+#shift1n { width:46px; margin-left:3px; margin-top:3px; }
+#zn { margin-left:6px; }
+#xn { margin-left:6px; }
+#cn { margin-left:6px; }
+#vn { margin-left:6px; width:21px; }
+#bn { margin-left:6px; }
+#nn { margin-left:6px; }
+#mn { margin-left:6px; }
+#aftermn { margin-left:6px; width:106px; }
+#shift2n { margin-left:6px; width:48px; }
+#ctrln { width:29px; margin-left:3px; margin-top:3px; }
+#cmdn { width:29px; margin-left:6px; }
+#alt1n { width:29px; margin-left:5px; }
+#spacen { width:162px; margin-left:7px; }
+#alt2n { width:29px; margin-left:6px; }
+#cmd2n { width:29px; margin-left:6px; }
+#filen{ width:29px; margin-left:6px; }
+#ctrl2n{ width:29px; margin-left:6px; }
+.upn { width:100%; height:22px; float:left; }
+#upn { margin-left:30px; }
+.bottomn { width:100%; height:22px; float:left; margin-top:6px; }
+#leftn { margin-left:3px; }
+#bottomn { margin-left:5px; width:23px; }
+#rightn { margin-left:5px; }
+.clearn { clear:both; }
+.mousen { width:105px; height:147px; margin:0 auto; background:url(../images/mouse.html) no-repeat center top; margin-top:155px; }
+.mouse-leftn { width:27px; height:45px; float:left; margin-left:26px; margin-top:24px; }
+.mouse-left-active { background:url(../images/mouse-left.html) no-repeat; }
+.mouse-rightn { width:27px; height:45px; float:left; margin-top:24px; }
+.mouse-right-active { background:url(../images/mouse-right.html) no-repeat; }
+
+/*=======-----------------------------=========tooltip=======----------------------============*/
+		.tooltip {
+			position: relative;
+			width:120px;
+			height:130px;
+			display:block;
+		}
+		.tooltip span {
+			margin-left: -999em;
+			position: absolute;
+		}
+		.tooltip:hover span {
+			border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; 
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+			font-family: Calibri, Tahoma, Geneva, sans-serif;
+			position: absolute; left: 1em; top: 2em; z-index: 99;
+			margin-left: 0; width: 250px;
+		}
+		.tooltip:hover img {
+			border: 0; margin: -10px 0 0 -55px;
+			float: left; position: absolute;
+		}
+		.tooltip:hover em {
+			font-family: Candara, Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: bold;
+			display: block; padding: 0.2em 0 0.6em 0;
+		}
+		
+		
+		*/
+		
+		
+.tt-wrapper{
+}
+.tt-wrapper li{
+	float: left;
+}
+.tt-wrapper li a{
+	display: block;
+	width: 68px;
+	height: 70px;
+	margin: 0 2px;
+	outline: none;
+	background: transparent url(../images/growcase_the_social_gunman_icons.html) no-repeat top left;
+	text-indent: -9000px;
+	position: relative;
+}
+.tt-wrapper li .tt-gplus{
+    background-position: 0px 0px;
+}
+.tt-wrapper li .tt-twitter{
+    background-position: -68px 0px;
+}
+.tt-wrapper li .tt-dribbble{
+    background-position: -136px 0px;
+}
+.tt-wrapper li .tt-facebook{
+    background-position: -204px 0px;
+}
+.tt-wrapper li .tt-linkedin{
+    background-position: -272px 0px;
+}
+.tt-wrapper li .tt-forrst{
+    background-position: -340px 0px;
+}
+.tt-wrapper li a span{
+	height: auto;
+	line-height: 20px;
+	padding: 10px;
+	left: 50%;
+	margin-left: -64px;
+	font-family: 'Alegreya SC', Georgia, serif;
+	font-weight: 400;	
+	font-style: italic;
+	font-size: 14px;
+	color: #719DAB;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	border: 4px solid #fff;
+	background: rgba(255,255,255,0.9);
+	text-indent: 0px;
+	border-radius: 5px;
+	position: absolute;
+	pointer-events: none;
+	bottom: 100px;
+	opacity: 0;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+	-webkit-transition: all 2s ease-in-out;
+	-moz-transition: all 2s ease-in-out;
+	-o-transition: all 2s ease-in-out;
+	-ms-transition: all 2s ease-in-out;
+	transition: all 2s ease-in-out;
+	z-index:999999;
+}
+.tt-wrapper li a span:before,
+.tt-wrapper li a span:after{
+	content: '';
+	position: absolute;
+	bottom: -15px;
+	left: 15%;
+	margin-left: -9px;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid rgba(0,0,0,0.1);
+}
+.tt-wrapper li a span:after{
+	bottom: -14px;
+	margin-left: -10px;
+	border-top: 10px solid #fff;
+}
+.tt-wrapper li a:hover span{
+	opacity: 1;
+	bottom: 70px;
+}
+#entern{ margin-left:5px; margin-top:1px; width:31px; height:52px; }
+.enterkey { background:url(../images/enter.html) no-repeat; margin-left:5px; margin-top:1px; width:31px; height:52px; }
